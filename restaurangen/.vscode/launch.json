@@ -1,0 +1,18 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "restaurangprojekt.Main",
+            "projectName": "restaurangen"
+        },
+        {
+            "type": "java",
+            "name": "Run",
+            "request": "launch",
+            "mainClass": "${file}",
+            "projectName": "Run"
+        }
+    ]
+}
