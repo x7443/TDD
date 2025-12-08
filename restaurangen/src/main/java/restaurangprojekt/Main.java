@@ -1,17 +1,22 @@
 package restaurangprojekt;
 import java.util.Scanner;
+import restaurangprojekt.TimeService;
 
 public class Main {
-    public static String welcomeMes = "Välkommen till PacoBurger, vad vill du beställa?";
+
+    private static TimeService mockTimeService;
 
     public static void main(String[] args) {
+
+        welcomeMensaje();
+
         Scanner scanner = new Scanner(System.in);
-        OrderLista listHanterare = new OrderLista();
-        System.out.println(welcomeMes);
+        OrderLista listHanterare = new OrderLista(mockTimeService);
         String orderedMat = scanner.nextLine();  
         System.out.println("Fyll i namn vid TakeAway eller bordsnummer vid dine-in");
         String ID = scanner.nextLine();
-        int nextAvailableNummer = OrderLista.getNextOrderNummer();
+         
+        int nextAvailableNummer = listHanterare.getNextOrderNummer();
         Order nyOrder = new Order(nextAvailableNummer, ID, orderedMat);
 
         System.out.println("\n" + "Tilldelat ordernummer: " + nyOrder.getOrderNummer());
@@ -35,6 +40,12 @@ public class Main {
             nyOrder.orderKlar();
             System.out.println("Order "+"'" + nyOrder.getKundID() + "' : " + nyOrder.getOrderStatus());
         }
+
+    }
+
+        public static void welcomeMensaje(){
+        String welcomeMes = "Välkommen till PacoBurger, vad vill du beställa?";
+        System.out.println(welcomeMes);
 
     }
 }

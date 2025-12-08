@@ -1,10 +1,10 @@
 package restaurangprojekt;
 
 public class Order {
-    private int orderNummer;
-    private String kundID;
-    private String mat;
-    private String status = "Ny";
+    private static int orderNummer;
+    private static String kundID;
+    private static String mat;
+    private static String status = "Ny";
     
     public Order(int nummer, String ID, String orderedMat){
         
@@ -14,32 +14,35 @@ public class Order {
 
     }
 
-    public int getOrderNummer(){
+
+
+    public static int getOrderNummer(){
         return orderNummer;
     }
 
-    public String getMat(){
+    public static String getMat(){
         return mat;
     }
 
-    public String getKundID(){
+    public static String getKundID(){
         return kundID;
     }
     
     public void orderStartad(){
 
         this.status = "Startad";
+        System.out.println("*APP-NOTIS* Order " + orderNummer + "är startad");
 
     }
 
     public void orderKlar(){
 
-        this.status = "Färdig";
-        System.out.println("Beställning nr " + orderNummer + " är färdig");
+        this.status = "Klar";
+        System.out.println("*APP-NOTIS* Beställning nr " + orderNummer + " är färdig");
 
     }
 
-    public String getOrderStatus(){
+    public static String getOrderStatus(){
         return status;
     }
 

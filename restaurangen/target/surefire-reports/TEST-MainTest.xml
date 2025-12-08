@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="MainTest" time="0.13" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="MainTest" time="0.131" tests="4" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="24"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -16,9 +16,9 @@
     <property name="user.country" value="US"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-24\bin"/>
-    <property name="sun.java.command" value="C:\Users\diego\AppData\Local\Temp\surefire11628719748407468688\surefirebooter-20251202123637330_3.jar C:\Users\diego\AppData\Local\Temp\surefire11628719748407468688 2025-12-02T12-36-37_073-jvmRun1 surefire-20251202123637330_1tmp surefire_0-20251202123637330_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\diego\AppData\Local\Temp\surefire10479174505559569073\surefirebooter-20251208112101203_3.jar C:\Users\diego\AppData\Local\Temp\surefire10479174505559569073 2025-12-08T11-21-00_966-jvmRun1 surefire-20251208112101203_1tmp surefire_0-20251208112101203_2tmp"/>
     <property name="jdk.debug" value="release"/>
-    <property name="test" value="MainTest#testWelcomeMessage"/>
+    <property name="test" value="MainTest"/>
     <property name="surefire.test.class.path" value="C:\Users\diego\OneDrive\Documents\VS\Cloned\TDD\restaurangen\target\test-classes;C:\Users\diego\OneDrive\Documents\VS\Cloned\TDD\restaurangen\target\classes;C:\Users\diego\.m2\repository\org\junit\jupiter\junit-jupiter\6.0.1\junit-jupiter-6.0.1.jar;C:\Users\diego\.m2\repository\org\junit\jupiter\junit-jupiter-api\6.0.1\junit-jupiter-api-6.0.1.jar;C:\Users\diego\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\diego\.m2\repository\org\junit\platform\junit-platform-commons\6.0.1\junit-platform-commons-6.0.1.jar;C:\Users\diego\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\diego\.m2\repository\org\jspecify\jspecify\1.0.0\jspecify-1.0.0.jar;C:\Users\diego\.m2\repository\org\junit\jupiter\junit-jupiter-params\6.0.1\junit-jupiter-params-6.0.1.jar;C:\Users\diego\.m2\repository\org\junit\jupiter\junit-jupiter-engine\6.0.1\junit-jupiter-engine-6.0.1.jar;C:\Users\diego\.m2\repository\org\junit\platform\junit-platform-engine\6.0.1\junit-platform-engine-6.0.1.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\diego"/>
@@ -32,7 +32,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\diego\AppData\Local\Temp\surefire11628719748407468688\surefirebooter-20251202123637330_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\diego\AppData\Local\Temp\surefire10479174505559569073\surefirebooter-20251208112101203_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="24.0.2+12-54"/>
@@ -61,5 +61,11 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="68.0"/>
   </properties>
-  <testcase name="testWelcomeMessage" classname="MainTest" time="0.079"/>
+  <testcase name="testGuardadoDeDatos" classname="MainTest" time="0.057"/>
+  <testcase name="testMarkAsFinishedUpdatesStatus" classname="MainTest" time="0.018">
+    <system-out><![CDATA[Beställning nr 15 är färdig
+]]></system-out>
+  </testcase>
+  <testcase name="testNextOrderIncrement" classname="MainTest" time="0.005"/>
+  <testcase name="testWelcomeMessage" classname="MainTest" time="0.006"/>
 </testsuite>
