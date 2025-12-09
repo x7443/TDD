@@ -39,7 +39,7 @@ public class Main {
                 System.exit(0);
             }
             
-            System.out.println("\nTryck på 'F' för att markera order som färdig");
+            System.out.println("\nTryck på 'F' för att markera ordern som färdig. Övrig tangent för att avbryta den");
             kokStatus = scanner.nextLine();
             
             
@@ -48,6 +48,10 @@ public class Main {
                 nyOrder.orderKlar();
                 System.out.println("Order "+"'" + nyOrder.getKundID() + "' : " + nyOrder.getOrderStatus());
                 
+            } else {
+                
+                System.out.println("\nOrder avbruten");
+                System.exit(0);
             }
         }
 
