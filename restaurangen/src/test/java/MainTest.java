@@ -33,11 +33,10 @@ public class MainTest {
         String idEsperado = "12";
         String comidaEsperada = "burger";
 
-        Order nuevoPedido = new Order(numeroEsperado, idEsperado, comidaEsperada);
-
-        assertEquals(numeroEsperado, nuevoPedido.getOrderNummer(), "El numero dado y el guardado no coinciden" );
-        assertEquals(idEsperado, nuevoPedido.getKundID(), "El ID del cliente dado no coincide con el guardado");
-        assertEquals("Ny", nuevoPedido.getOrderStatus());
+        assertEquals(numeroEsperado, Order.getOrderNummer(), "El numero dado y el guardado no coinciden" );
+        assertEquals(idEsperado, Order.getKundID(), "El ID del cliente dado no coincide con el guardado");
+        assertEquals("Ny", Order.getOrderStatus());
+        assertEquals(comidaEsperada, Order.getMat());
     }
     @Test
     public void testPedidoStatus (){

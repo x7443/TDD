@@ -8,9 +8,9 @@ public class Order {
     
     public Order(int nummer, String ID, String orderedMat){
         
-        this.orderNummer = nummer;
-        this.kundID = ID;
-        this.mat = orderedMat;
+        Order.orderNummer = nummer;
+        Order.kundID = ID;
+        Order.mat = orderedMat;
 
     }
 
@@ -30,14 +30,14 @@ public class Order {
     
     public void orderStartad(){
 
-        this.status = "Startad";
+        Order.status = "Startad";
         System.out.println("*APP-NOTIS* Order " + orderNummer + "är startad");
 
     }
 
     public void orderKlar(){
 
-        this.status = "Klar";
+        Order.status = "Klar";
         System.out.println("*APP-NOTIS* Beställning nr " + orderNummer + " är färdig");
 
     }

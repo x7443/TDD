@@ -9,8 +9,7 @@ package restaurangprojekt;
 public class TimeService {
 
     public int getCurrentHour() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'getCurrentHour'");
+        return 0;
     }
 
 }

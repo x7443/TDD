@@ -1,17 +1,16 @@
 package restaurangprojekt;
 import java.util.Scanner;
-import restaurangprojekt.TimeService;
 
 public class Main {
 
-    private static TimeService mockTimeService;
+    public TimeService mockTimeService;
 
     public static void main(String[] args) {
 
         welcomeMensaje();
-
         Scanner scanner = new Scanner(System.in);
-        OrderLista listHanterare = new OrderLista(mockTimeService);
+        TimeService timeService = new TimeService();
+        OrderLista listHanterare = new OrderLista(timeService);
         String orderedMat = scanner.nextLine();  
         System.out.println("Fyll i namn vid TakeAway eller bordsnummer vid dine-in");
         String ID = scanner.nextLine();
@@ -19,17 +18,17 @@ public class Main {
         int nextAvailableNummer = listHanterare.getNextOrderNummer();
         Order nyOrder = new Order(nextAvailableNummer, ID, orderedMat);
 
-        System.out.println("\n" + "Tilldelat ordernummer: " + nyOrder.getOrderNummer());
-        System.out.println("KundID: " + nyOrder.getKundID());
-        System.out.println("Mat: " + nyOrder.getMat());
-        System.out.println("Status: " + nyOrder.getOrderStatus());
+        System.out.println("Tilldelat ordernummer: " + Order.getOrderNummer());
+        System.out.println("KundID: " + Order.getKundID());
+        System.out.println("Mat: " + Order.getMat());
+        System.out.println("Status: " + Order.getOrderStatus());
 
         String kokStatus = scanner.nextLine();
 
         if(kokStatus.equalsIgnoreCase("S")){
 
             nyOrder.orderStartad();
-            System.out.println("Order "+"'" + nyOrder.getKundID() + "' : " + nyOrder.getOrderStatus());
+            System.out.println("Order "+"'" + Order.getKundID() + "' : " + Order.getOrderStatus());
         } else {}
 
         kokStatus = scanner.nextLine();
@@ -38,7 +37,9 @@ public class Main {
         if(kokStatus.equalsIgnoreCase("F")){
 
             nyOrder.orderKlar();
-            System.out.println("Order "+"'" + nyOrder.getKundID() + "' : " + nyOrder.getOrderStatus());
+            System.out.println("Order "+"'" + Order.getKundID() + "' : " + Order.getOrderStatus());
+
+            scanner.close();
         }
 
     }
