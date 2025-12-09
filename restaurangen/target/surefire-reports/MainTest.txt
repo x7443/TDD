@@ -1,4 +1,14 @@
 -------------------------------------------------------------------------------
 Test set: MainTest
 -------------------------------------------------------------------------------
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.131 s -- in MainTest
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.156 s <<< FAILURE! -- in MainTest
+MainTest.testGuardadoDeDatos -- Time elapsed: 0.076 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <restaurangprojekt.Order@135606db> but was: <burger>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:158)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:139)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:201)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:184)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:179)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1188)
+	at MainTest.testGuardadoDeDatos(MainTest.java:43)
+

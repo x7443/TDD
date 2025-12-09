@@ -16,33 +16,33 @@ public class Order {
 
 
 
-    public static int getOrderNummer(){
+    public int getOrderNummer(){
         return orderNummer;
     }
 
-    public static String getMat(){
+    public String getMat(){
         return mat;
     }
 
-    public static String getKundID(){
+    public String getKundID(){
         return kundID;
     }
     
     public void orderStartad(){
 
         Order.status = "Startad";
-        System.out.println("*APP-NOTIS* Order " + orderNummer + "är startad");
+        System.out.println("*APP-NOTIS* Din order är startad! \nKÖKSSKÄRM:");
 
     }
 
     public void orderKlar(){
 
         Order.status = "Klar";
-        System.out.println("*APP-NOTIS* Beställning nr " + orderNummer + " är färdig");
+        System.out.println("*APP-NOTIS* Din order är klar! \nKÖKSSKÄRM:");
 
     }
 
-    public static String getOrderStatus(){
+    public String getOrderStatus(){
         return status;
     }
 

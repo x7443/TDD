@@ -16,11 +16,11 @@ public class OrderLista {
     public int getNextOrderNummer() { 
         // Comprobar si es hora de abrir Y si el contador no ha sido reseteado ya
         if (timeService.getCurrentHour() == DAILY_RESET_HOUR && currentOrderNumber != 1) {
-            currentOrderNumber = 1; //time service is null because the tests mock it, we fix it by passing the mock. In order to do that we need to change the contructor by with the name 
+            currentOrderNumber = 1;
         } else {
             currentOrderNumber++; 
         }
-        return currentOrderNumber;
+         return currentOrderNumber;
     }
 
     // Método de ayuda estático para asegurar el aislamiento de las pruebas

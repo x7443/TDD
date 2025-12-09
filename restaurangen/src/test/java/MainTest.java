@@ -19,6 +19,8 @@ public class MainTest {
     @Test
     public void testNextOrderIncrement(){
 
+        mockTimeService = new TimeService();
+
         OrderLista listaManager = new OrderLista(mockTimeService);
         int primerOrderNum = listaManager.getNextOrderNummer();
         int segundoOrderNum = listaManager.getNextOrderNummer();
@@ -33,18 +35,20 @@ public class MainTest {
         String idEsperado = "12";
         String comidaEsperada = "burger";
 
-        assertEquals(numeroEsperado, Order.getOrderNummer(), "El numero dado y el guardado no coinciden" );
-        assertEquals(idEsperado, Order.getKundID(), "El ID del cliente dado no coincide con el guardado");
-        assertEquals("Ny", Order.getOrderStatus());
-        assertEquals(comidaEsperada, Order.getMat());
+        Order nuevoPedido = new Order(numeroEsperado, idEsperado, comidaEsperada);
+
+        assertEquals(numeroEsperado, nuevoPedido.getOrderNummer(), "El numero dado y el guardado no coinciden" );
+        assertEquals(idEsperado, nuevoPedido.getKundID(), "El ID del cliente dado no coincide con el guardado");
+        assertEquals("Ny", nuevoPedido.getOrderStatus());
+        assertEquals(comidaEsperada, nuevoPedido.getMat());
     }
     @Test
     public void testPedidoStatus (){
 
         Order pedidoStatus = new Order(15, "John Doe", "Salad");
-        assertEquals("Ny", Order.getOrderStatus(), "El estado inicial debe de ser 'Ny'");
+        assertEquals("Ny", pedidoStatus.getOrderStatus(), "El estado inicial debe de ser 'Ny'");
         pedidoStatus.orderKlar();   
-        assertEquals("Klar", Order.getOrderStatus(), "El estado debe ser 'Klar' después de llamar a markAsFinished()");
+        assertEquals("Klar", pedidoStatus.getOrderStatus(), "El estado debe ser 'Klar' después de llamar a markAsFinished()");
     }
 
 

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="MainTest" time="0.131" tests="4" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="MainTest" time="0.156" tests="3" errors="0" skipped="0" failures="1">
   <properties>
     <property name="java.specification.version" value="24"/>
     <property name="sun.cpu.isalist" value="amd64"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.class.path" value="C:\Users\diego\OneDrive\Documents\VS\Cloned\TDD\restaurangen\target\test-classes;C:\Users\diego\OneDrive\Documents\VS\Cloned\TDD\restaurangen\target\classes;C:\Users\diego\.m2\repository\org\junit\jupiter\junit-jupiter\6.0.1\junit-jupiter-6.0.1.jar;C:\Users\diego\.m2\repository\org\junit\jupiter\junit-jupiter-api\6.0.1\junit-jupiter-api-6.0.1.jar;C:\Users\diego\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\diego\.m2\repository\org\junit\platform\junit-platform-commons\6.0.1\junit-platform-commons-6.0.1.jar;C:\Users\diego\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\diego\.m2\repository\org\jspecify\jspecify\1.0.0\jspecify-1.0.0.jar;C:\Users\diego\.m2\repository\org\junit\jupiter\junit-jupiter-params\6.0.1\junit-jupiter-params-6.0.1.jar;C:\Users\diego\.m2\repository\org\junit\jupiter\junit-jupiter-engine\6.0.1\junit-jupiter-engine-6.0.1.jar;C:\Users\diego\.m2\repository\org\junit\platform\junit-platform-engine\6.0.1\junit-platform-engine-6.0.1.jar;"/>
+    <property name="java.class.path" value="C:\Users\diego\OneDrive\Documents\VS\Cloned\TDD\restaurangen\target\test-classes;C:\Users\diego\OneDrive\Documents\VS\Cloned\TDD\restaurangen\target\classes;C:\Users\diego\.m2\repository\org\junit\jupiter\junit-jupiter\6.0.1\junit-jupiter-6.0.1.jar;C:\Users\diego\.m2\repository\org\junit\jupiter\junit-jupiter-api\6.0.1\junit-jupiter-api-6.0.1.jar;C:\Users\diego\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\diego\.m2\repository\org\junit\platform\junit-platform-commons\6.0.1\junit-platform-commons-6.0.1.jar;C:\Users\diego\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\diego\.m2\repository\org\jspecify\jspecify\1.0.0\jspecify-1.0.0.jar;C:\Users\diego\.m2\repository\org\junit\jupiter\junit-jupiter-params\6.0.1\junit-jupiter-params-6.0.1.jar;C:\Users\diego\.m2\repository\org\junit\jupiter\junit-jupiter-engine\6.0.1\junit-jupiter-engine-6.0.1.jar;C:\Users\diego\.m2\repository\org\junit\platform\junit-platform-engine\6.0.1\junit-platform-engine-6.0.1.jar;C:\Users\diego\.m2\repository\org\mockito\mockito-core\2.19.0\mockito-core-2.19.0.jar;C:\Users\diego\.m2\repository\net\bytebuddy\byte-buddy\1.8.10\byte-buddy-1.8.10.jar;C:\Users\diego\.m2\repository\net\bytebuddy\byte-buddy-agent\1.8.10\byte-buddy-agent-1.8.10.jar;C:\Users\diego\.m2\repository\org\objenesis\objenesis\2.6\objenesis-2.6.jar;"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="user.variant" value=""/>
@@ -16,10 +16,10 @@
     <property name="user.country" value="US"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-24\bin"/>
-    <property name="sun.java.command" value="C:\Users\diego\AppData\Local\Temp\surefire10479174505559569073\surefirebooter-20251208112101203_3.jar C:\Users\diego\AppData\Local\Temp\surefire10479174505559569073 2025-12-08T11-21-00_966-jvmRun1 surefire-20251208112101203_1tmp surefire_0-20251208112101203_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\diego\AppData\Local\Temp\surefire9999831057532899090\surefirebooter-20251209143654834_3.jar C:\Users\diego\AppData\Local\Temp\surefire9999831057532899090 2025-12-09T14-36-54_610-jvmRun1 surefire-20251209143654834_1tmp surefire_0-20251209143654834_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="test" value="MainTest"/>
-    <property name="surefire.test.class.path" value="C:\Users\diego\OneDrive\Documents\VS\Cloned\TDD\restaurangen\target\test-classes;C:\Users\diego\OneDrive\Documents\VS\Cloned\TDD\restaurangen\target\classes;C:\Users\diego\.m2\repository\org\junit\jupiter\junit-jupiter\6.0.1\junit-jupiter-6.0.1.jar;C:\Users\diego\.m2\repository\org\junit\jupiter\junit-jupiter-api\6.0.1\junit-jupiter-api-6.0.1.jar;C:\Users\diego\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\diego\.m2\repository\org\junit\platform\junit-platform-commons\6.0.1\junit-platform-commons-6.0.1.jar;C:\Users\diego\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\diego\.m2\repository\org\jspecify\jspecify\1.0.0\jspecify-1.0.0.jar;C:\Users\diego\.m2\repository\org\junit\jupiter\junit-jupiter-params\6.0.1\junit-jupiter-params-6.0.1.jar;C:\Users\diego\.m2\repository\org\junit\jupiter\junit-jupiter-engine\6.0.1\junit-jupiter-engine-6.0.1.jar;C:\Users\diego\.m2\repository\org\junit\platform\junit-platform-engine\6.0.1\junit-platform-engine-6.0.1.jar;"/>
+    <property name="surefire.test.class.path" value="C:\Users\diego\OneDrive\Documents\VS\Cloned\TDD\restaurangen\target\test-classes;C:\Users\diego\OneDrive\Documents\VS\Cloned\TDD\restaurangen\target\classes;C:\Users\diego\.m2\repository\org\junit\jupiter\junit-jupiter\6.0.1\junit-jupiter-6.0.1.jar;C:\Users\diego\.m2\repository\org\junit\jupiter\junit-jupiter-api\6.0.1\junit-jupiter-api-6.0.1.jar;C:\Users\diego\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\diego\.m2\repository\org\junit\platform\junit-platform-commons\6.0.1\junit-platform-commons-6.0.1.jar;C:\Users\diego\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\diego\.m2\repository\org\jspecify\jspecify\1.0.0\jspecify-1.0.0.jar;C:\Users\diego\.m2\repository\org\junit\jupiter\junit-jupiter-params\6.0.1\junit-jupiter-params-6.0.1.jar;C:\Users\diego\.m2\repository\org\junit\jupiter\junit-jupiter-engine\6.0.1\junit-jupiter-engine-6.0.1.jar;C:\Users\diego\.m2\repository\org\junit\platform\junit-platform-engine\6.0.1\junit-platform-engine-6.0.1.jar;C:\Users\diego\.m2\repository\org\mockito\mockito-core\2.19.0\mockito-core-2.19.0.jar;C:\Users\diego\.m2\repository\net\bytebuddy\byte-buddy\1.8.10\byte-buddy-1.8.10.jar;C:\Users\diego\.m2\repository\net\bytebuddy\byte-buddy-agent\1.8.10\byte-buddy-agent-1.8.10.jar;C:\Users\diego\.m2\repository\org\objenesis\objenesis\2.6\objenesis-2.6.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\diego"/>
     <property name="user.language" value="en"/>
@@ -32,7 +32,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\diego\AppData\Local\Temp\surefire10479174505559569073\surefirebooter-20251208112101203_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\diego\AppData\Local\Temp\surefire9999831057532899090\surefirebooter-20251209143654834_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="24.0.2+12-54"/>
@@ -43,7 +43,7 @@
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="file.encoding" value="UTF-8"/>
     <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
-    <property name="maven.ext.class.path" value="C:\Users\diego\.vscode\extensions\oracle.oracle-java-24.1.2\nbcode\java\maven-nblib\netbeans-eventspy.jar"/>
+    <property name="maven.ext.class.path" value="C:\Users\diego\.vscode\extensions\oracle.oracle-java-25.0.0\nbcode\java\maven-nblib\netbeans-eventspy.jar"/>
     <property name="localRepository" value="C:\Users\diego\.m2\repository"/>
     <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
     <property name="java.io.tmpdir" value="C:\Users\diego\AppData\Local\Temp\"/>
@@ -61,11 +61,20 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="68.0"/>
   </properties>
-  <testcase name="testGuardadoDeDatos" classname="MainTest" time="0.057"/>
-  <testcase name="testMarkAsFinishedUpdatesStatus" classname="MainTest" time="0.018">
-    <system-out><![CDATA[Beställning nr 15 är färdig
+  <testcase name="testGuardadoDeDatos" classname="MainTest" time="0.076">
+    <failure message="expected: &lt;restaurangprojekt.Order@135606db&gt; but was: &lt;burger&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <restaurangprojekt.Order@135606db> but was: <burger>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:158)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:139)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:201)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:184)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:179)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1188)
+	at MainTest.testGuardadoDeDatos(MainTest.java:43)
+]]></failure>
+  </testcase>
+  <testcase name="testPedidoStatus" classname="MainTest" time="0.021">
+    <system-out><![CDATA[*APP-NOTIS* Beställning nr 15 är färdig
 ]]></system-out>
   </testcase>
-  <testcase name="testNextOrderIncrement" classname="MainTest" time="0.005"/>
-  <testcase name="testWelcomeMessage" classname="MainTest" time="0.006"/>
+  <testcase name="testNextOrderIncrement" classname="MainTest" time="0.004"/>
 </testsuite>
